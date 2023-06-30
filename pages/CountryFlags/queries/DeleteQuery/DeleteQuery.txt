@@ -1,0 +1,2 @@
+DELETE FROM countryFlags
+  WHERE Country = {{data_table.triggeredRow.Country}};

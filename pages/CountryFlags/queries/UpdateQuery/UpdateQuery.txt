@@ -1,0 +1,5 @@
+UPDATE countryFlags SET
+		Country = '{{update_form.fieldState.Country.isVisible ? update_form.formData.Country : update_form.sourceData.Country}}',
+		File_Name = '{{update_form.fieldState.File_Name.isVisible ? update_form.formData.File_Name : update_form.sourceData.File_Name}}',
+    Flag = '{{update_form.fieldState.Flag.isVisible ? update_form.formData.Flag : update_form.sourceData.Flag}}'
+WHERE Country = {{data_table.selectedRow.Country}};

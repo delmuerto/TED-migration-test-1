@@ -1,0 +1,28 @@
+INSERT INTO public."astronauts" (
+	"id",
+	"url",
+	"name",
+	"statusid",
+	"statusname",
+	"typeid",
+	"typename",
+	"date_of_birth",
+	"date_of_death",
+	"nationality",
+	"bio",
+	"twitter"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.url}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.statusid}}',
+	'{{insert_form.formData.statusname}}',
+	'{{insert_form.formData.typeid}}',
+	'{{insert_form.formData.typename}}',
+	'{{insert_form.formData.date_of_birth}}',
+	'{{insert_form.formData.date_of_death}}',
+	'{{insert_form.formData.nationality}}',
+	'{{insert_form.formData.bio}}',
+	'{{insert_form.formData.twitter}}'
+);

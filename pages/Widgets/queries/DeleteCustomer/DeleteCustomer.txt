@@ -1,0 +1,2 @@
+DELETE FROM customers
+  WHERE customers.customerNumber = {{Input2.text}}; -- Specify a valid condition here. Removing the condition may delete everything in the table!

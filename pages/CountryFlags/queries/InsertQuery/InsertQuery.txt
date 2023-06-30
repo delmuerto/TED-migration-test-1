@@ -1,0 +1,10 @@
+INSERT INTO countryFlags (
+	Country,
+	Country,
+	File_Name,
+	Flag)
+VALUES (
+	'{{insert_form.formData.Country}}',
+	'{{insert_form.formData.Country}}',
+	'{{insert_form.formData.File_Name}}',
+	'{{insert_form.formData.Flag}}');

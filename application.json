@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "ListingAndReviews",
+      "isDefault": true
+    },
+    {
+      "id": "CountryFlags",
+      "isDefault": false
+    },
+    {
+      "id": "Public.astronauts",
+      "isDefault": false
+    },
+    {
+      "id": "Widgets",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#D9E7FF",
+  "icon": "laptop",
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

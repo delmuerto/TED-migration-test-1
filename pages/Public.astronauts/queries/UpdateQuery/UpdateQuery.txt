@@ -1,0 +1,13 @@
+UPDATE public."astronauts" SET
+		"url" = '{{update_form.fieldState.url.isVisible ? update_form.formData.url : update_form.sourceData.url}}',
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+    "statusid" = '{{update_form.fieldState.statusid.isVisible ? update_form.formData.statusid : update_form.sourceData.statusid}}',
+		"statusname" = '{{update_form.fieldState.statusname.isVisible ? update_form.formData.statusname : update_form.sourceData.statusname}}',
+		"typeid" = '{{update_form.fieldState.typeid.isVisible ? update_form.formData.typeid : update_form.sourceData.typeid}}',
+		"typename" = '{{update_form.fieldState.typename.isVisible ? update_form.formData.typename : update_form.sourceData.typename}}',
+		"date_of_birth" = '{{update_form.fieldState.date_of_birth.isVisible ? update_form.formData.date_of_birth : update_form.sourceData.date_of_birth}}',
+		"date_of_death" = '{{update_form.fieldState.date_of_death.isVisible ? update_form.formData.date_of_death : update_form.sourceData.date_of_death}}',
+		"nationality" = '{{update_form.fieldState.nationality.isVisible ? update_form.formData.nationality : update_form.sourceData.nationality}}',
+		"bio" = '{{update_form.fieldState.bio.isVisible ? update_form.formData.bio : update_form.sourceData.bio}}',
+		"twitter" = '{{update_form.fieldState.twitter.isVisible ? update_form.formData.twitter : update_form.sourceData.twitter}}'
+	WHERE "id" = {{data_table.selectedRow.id}};
