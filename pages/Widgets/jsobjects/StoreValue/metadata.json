@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "649e71a9ef97940c07177e4a_649e77a1ef97940c07177e6f",
+  "id": "Widgets_StoreValue",
   "unpublishedCollection": {
     "name": "StoreValue",
     "pageId": "Widgets",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Widgets_StoreValue",
-  "deleted": false,
-  "gitSyncId": "649e71a9ef97940c07177e4a_649e77a1ef97940c07177e6f"
+    "variables": []
+  }
 }

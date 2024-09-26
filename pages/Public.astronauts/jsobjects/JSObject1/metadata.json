@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "64953a388c164921a65b7f09_649d2175051d7b4a44e0f9d8",
+  "id": "Public.astronauts_JSObject1",
   "unpublishedCollection": {
     "name": "JSObject1",
     "pageId": "Public.astronauts",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Public.astronauts_JSObject1",
-  "deleted": false,
-  "gitSyncId": "64953a388c164921a65b7f09_649d2175051d7b4a44e0f9d8"
+    ]
+  }
 }

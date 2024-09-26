@@ -1,0 +1,899 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 85,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "id",
+    "url",
+    "name",
+    "statusid",
+    "statusname",
+    "typeid",
+    "typename",
+    "date_of_birth",
+    "date_of_death",
+    "nationality",
+    "bio",
+    "twitter",
+    "instagram",
+    "wiki",
+    "agencyid",
+    "agencyurl",
+    "agencyname",
+    "agencyfeatured",
+    "agencytype",
+    "agencycountry_code",
+    "agencyabbrev",
+    "agencydescription",
+    "agencyadministrator",
+    "agencyfounding_year",
+    "agencylaunchers",
+    "agencyspacecraft",
+    "agencyparent",
+    "agencyimage_url",
+    "profile_image",
+    "profile_image_thumbnail",
+    "last_flight",
+    "first_flight",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.url.computedValue"
+    },
+    {
+      "key": "primaryColumns.name.computedValue"
+    },
+    {
+      "key": "primaryColumns.statusid.computedValue"
+    },
+    {
+      "key": "primaryColumns.statusname.computedValue"
+    },
+    {
+      "key": "primaryColumns.typeid.computedValue"
+    },
+    {
+      "key": "primaryColumns.typename.computedValue"
+    },
+    {
+      "key": "primaryColumns.date_of_birth.computedValue"
+    },
+    {
+      "key": "primaryColumns.date_of_death.computedValue"
+    },
+    {
+      "key": "primaryColumns.nationality.computedValue"
+    },
+    {
+      "key": "primaryColumns.bio.computedValue"
+    },
+    {
+      "key": "primaryColumns.twitter.computedValue"
+    },
+    {
+      "key": "primaryColumns.instagram.computedValue"
+    },
+    {
+      "key": "primaryColumns.wiki.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyid.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyurl.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyname.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyfeatured.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencytype.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencycountry_code.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyabbrev.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencydescription.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyadministrator.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyfounding_year.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencylaunchers.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyspacecraft.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyparent.computedValue"
+    },
+    {
+      "key": "primaryColumns.agencyimage_url.computedValue"
+    },
+    {
+      "key": "primaryColumns.profile_image.computedValue"
+    },
+    {
+      "key": "primaryColumns.profile_image_thumbnail.computedValue"
+    },
+    {
+      "key": "primaryColumns.last_flight.computedValue"
+    },
+    {
+      "key": "primaryColumns.first_flight.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": "true",
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "zba5qel0au",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "onPageChange": "{{SelectQuery.run()}}",
+  "onSearchTextChanged": "{{SelectQuery.run()}}",
+  "onSort": "{{SelectQuery.run()}}",
+  "parentColumnSpace": 16.3125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "agencyabbrev": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyabbrev))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyabbrev",
+      "index": 20,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyabbrev",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyadministrator": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyadministrator))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyadministrator",
+      "index": 22,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyadministrator",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencycountry_code": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencycountry_code))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencycountry_code",
+      "index": 19,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencycountry_code",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencydescription": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencydescription))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencydescription",
+      "index": 21,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencydescription",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyfeatured": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyfeatured))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyfeatured",
+      "index": 17,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyfeatured",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyfounding_year": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyfounding_year))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyfounding_year",
+      "index": 23,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyfounding_year",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyid": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyid))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyid",
+      "index": 14,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyid",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyimage_url": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyimage_url))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyimage_url",
+      "index": 27,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyimage_url",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencylaunchers": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencylaunchers))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencylaunchers",
+      "index": 24,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencylaunchers",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyname": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyname))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyname",
+      "index": 16,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyname",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyparent": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyparent))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyparent",
+      "index": 26,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyparent",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyspacecraft": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyspacecraft))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyspacecraft",
+      "index": 25,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyspacecraft",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencytype": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencytype))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencytype",
+      "index": 18,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencytype",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "agencyurl": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.agencyurl))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "agencyurl",
+      "index": 15,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "agencyurl",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "bio": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bio))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "bio",
+      "index": 10,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "bio",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    },
+    "date_of_birth": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.date_of_birth))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "date_of_birth",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "date_of_birth",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "date_of_death": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.date_of_death))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "date_of_death",
+      "index": 8,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "date_of_death",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "first_flight": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.first_flight))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "first_flight",
+      "index": 31,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "first_flight",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "id": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "id",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "instagram": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.instagram))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "instagram",
+      "index": 12,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "instagram",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "last_flight": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.last_flight))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "last_flight",
+      "index": 30,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "last_flight",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "name": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "name",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "name",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "nationality": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.nationality))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "nationality",
+      "index": 9,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "nationality",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "profile_image": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.profile_image))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "profile_image",
+      "index": 28,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "profile_image",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "profile_image_thumbnail": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.profile_image_thumbnail))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "profile_image_thumbnail",
+      "index": 29,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "profile_image_thumbnail",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "statusid": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.statusid))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "statusid",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "statusid",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "statusname": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.statusname))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "statusname",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "statusname",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "twitter": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.twitter))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "twitter",
+      "index": 11,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "twitter",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "typeid": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.typeid))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "typeid",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "typeid",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "typename": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.typename))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "typename",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "typename",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "url": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.url))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "url",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "url",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "wiki": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.wiki))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "wiki",
+      "index": 13,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "wiki",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{SelectQuery.data}}",
+  "textSize": "0.875rem",
+  "topRow": 6,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "hpy3pb4xft",
+  "widgetName": "data_table"
+}

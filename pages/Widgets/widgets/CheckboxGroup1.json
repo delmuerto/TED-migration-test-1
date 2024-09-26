@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "defaultSelectedValues": "{{GetAstronauts.data[0].name}}",
+  "displayName": "Checkbox Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "options"
+    },
+    {
+      "key": "defaultSelectedValues"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bda24aa6992a7bc7616b83aca2c931d9.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ghmyzn70yc",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Astronaut",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 20,
+  "options": "{{astronauts.getAstronauts()}}",
+  "originalBottomRow": 30,
+  "originalTopRow": 11,
+  "parentColumnSpace": 10.75,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 21,
+  "topRow": 11,
+  "type": "CHECKBOX_GROUP_WIDGET",
+  "version": 2,
+  "widgetId": "emnlbe3iku",
+  "widgetName": "CheckboxGroup1"
+}

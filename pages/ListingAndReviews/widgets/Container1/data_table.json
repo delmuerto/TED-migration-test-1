@@ -1,0 +1,1121 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 86,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "amenities",
+    "notes",
+    "access",
+    "house_rules",
+    "description",
+    "calendar_last_scraped",
+    "neighborhood_overview",
+    "number_of_reviews",
+    "availability",
+    "space",
+    "review_scores",
+    "cleaning_fee",
+    "reviews",
+    "price",
+    "host",
+    "property_type",
+    "summary",
+    "monthly_price",
+    "security_deposit",
+    "images",
+    "address",
+    "weekly_price",
+    "bed_type",
+    "listing_url",
+    "guests_included",
+    "maximum_nights",
+    "bathrooms",
+    "bedrooms",
+    "extra_people",
+    "minimum_nights",
+    "transit",
+    "accommodates",
+    "name",
+    "interaction",
+    "cancellation_policy",
+    "_id",
+    "beds",
+    "last_scraped",
+    "room_type",
+    "first_review",
+    "last_review",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "deliveryAddress": 170,
+    "id": 228,
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.sanitizedTableData.map((currentRow) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "#DD4B34",
+      "columnType": "button",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.customColumn1))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 7,
+      "isDerived": true,
+      "isVisible": true,
+      "label": "Delete",
+      "onClick": "{{DeleteQuery.run()}}",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns._id.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "derivedColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "derivedColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.amenities.computedValue"
+    },
+    {
+      "key": "primaryColumns.notes.computedValue"
+    },
+    {
+      "key": "primaryColumns.access.computedValue"
+    },
+    {
+      "key": "primaryColumns.house_rules.computedValue"
+    },
+    {
+      "key": "primaryColumns.description.computedValue"
+    },
+    {
+      "key": "primaryColumns.calendar_last_scraped.computedValue"
+    },
+    {
+      "key": "primaryColumns.neighborhood_overview.computedValue"
+    },
+    {
+      "key": "primaryColumns.number_of_reviews.computedValue"
+    },
+    {
+      "key": "primaryColumns.availability.computedValue"
+    },
+    {
+      "key": "primaryColumns.space.computedValue"
+    },
+    {
+      "key": "primaryColumns.review_scores.computedValue"
+    },
+    {
+      "key": "primaryColumns.cleaning_fee.computedValue"
+    },
+    {
+      "key": "primaryColumns.reviews.computedValue"
+    },
+    {
+      "key": "primaryColumns.price.computedValue"
+    },
+    {
+      "key": "primaryColumns.host.computedValue"
+    },
+    {
+      "key": "primaryColumns.property_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.summary.computedValue"
+    },
+    {
+      "key": "primaryColumns.monthly_price.computedValue"
+    },
+    {
+      "key": "primaryColumns.security_deposit.computedValue"
+    },
+    {
+      "key": "primaryColumns.images.computedValue"
+    },
+    {
+      "key": "primaryColumns.address.computedValue"
+    },
+    {
+      "key": "primaryColumns.weekly_price.computedValue"
+    },
+    {
+      "key": "primaryColumns.bed_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.listing_url.computedValue"
+    },
+    {
+      "key": "primaryColumns.guests_included.computedValue"
+    },
+    {
+      "key": "primaryColumns.maximum_nights.computedValue"
+    },
+    {
+      "key": "primaryColumns.bathrooms.computedValue"
+    },
+    {
+      "key": "primaryColumns.bedrooms.computedValue"
+    },
+    {
+      "key": "primaryColumns.extra_people.computedValue"
+    },
+    {
+      "key": "primaryColumns.minimum_nights.computedValue"
+    },
+    {
+      "key": "primaryColumns.transit.computedValue"
+    },
+    {
+      "key": "primaryColumns.accommodates.computedValue"
+    },
+    {
+      "key": "primaryColumns.name.computedValue"
+    },
+    {
+      "key": "primaryColumns.interaction.computedValue"
+    },
+    {
+      "key": "primaryColumns.cancellation_policy.computedValue"
+    },
+    {
+      "key": "primaryColumns.beds.computedValue"
+    },
+    {
+      "key": "primaryColumns.last_scraped.computedValue"
+    },
+    {
+      "key": "primaryColumns.room_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.first_review.computedValue"
+    },
+    {
+      "key": "primaryColumns.last_review.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
+    }
+  ],
+  "horizontalAlignment": "LEFT",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": "true",
+  "isVisibleCompactMode": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "onPageChange": "{{FindQuery.run()}}",
+  "onSearchTextChanged": "{{FindQuery.run()}}",
+  "onSort": "{{FindQuery.run()}}",
+  "parentColumnSpace": 1,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "access",
+  "primaryColumns": {
+    "access": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.access))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "access",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "access",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "accommodates": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.accommodates))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "accommodates",
+      "index": 31,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "accommodates",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "address": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.address))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "address",
+      "index": 20,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "address",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "amenities": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.amenities))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "amenities",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "amenities",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "appsmith_mongo_escape_id": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow._id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "_id",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "_id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "availability": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.availability))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "availability",
+      "index": 8,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "availability",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "bathrooms": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bathrooms))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "bathrooms",
+      "index": 26,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "bathrooms",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "bed_type": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bed_type))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "bed_type",
+      "index": 22,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "bed_type",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "bedrooms": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bedrooms))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "bedrooms",
+      "index": 27,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "bedrooms",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "beds": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.beds))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "beds",
+      "index": 36,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "beds",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "calendar_last_scraped": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.calendar_last_scraped))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "calendar_last_scraped",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "calendar_last_scraped",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "cancellation_policy": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.cancellation_policy))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "cancellation_policy",
+      "index": 34,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "cancellation_policy",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "cleaning_fee": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.cleaning_fee))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "cleaning_fee",
+      "index": 11,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "cleaning_fee",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.sanitizedTableData.map((currentRow) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.sanitizedTableData.map((currentRow) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => { return 'Delete'})}}",
+      "buttonLabelColor": "#FFFFFF",
+      "columnType": "button",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.customColumn1))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "description": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.description))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "description",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "description",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "extra_people": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.extra_people))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "extra_people",
+      "index": 28,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "extra_people",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "first_review": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.first_review))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "first_review",
+      "index": 39,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "first_review",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "guests_included": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.guests_included))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "guests_included",
+      "index": 24,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "guests_included",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "host": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.host))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "host",
+      "index": 14,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "host",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "house_rules": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.house_rules))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "house_rules",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "house_rules",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "images": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.images))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "images",
+      "index": 19,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "images",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "interaction": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.interaction))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "interaction",
+      "index": 33,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "interaction",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "last_review": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.last_review))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "last_review",
+      "index": 40,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "last_review",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "last_scraped": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.last_scraped))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "last_scraped",
+      "index": 37,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "last_scraped",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "listing_url": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.listing_url))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "listing_url",
+      "index": 23,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "listing_url",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "maximum_nights": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.maximum_nights))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "maximum_nights",
+      "index": 25,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "maximum_nights",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "minimum_nights": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.minimum_nights))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "minimum_nights",
+      "index": 29,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "minimum_nights",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "monthly_price": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.monthly_price))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "monthly_price",
+      "index": 17,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "monthly_price",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "name": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "name",
+      "index": 32,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "name",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "neighborhood_overview": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.neighborhood_overview))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "neighborhood_overview",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "neighborhood_overview",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "notes": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "notes",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "notes",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "number_of_reviews": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.number_of_reviews))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "number_of_reviews",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "number_of_reviews",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "price": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.price))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "price",
+      "index": 13,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "price",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "property_type": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.property_type))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "property_type",
+      "index": 15,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "property_type",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "review_scores": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.review_scores))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "review_scores",
+      "index": 10,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "review_scores",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "reviews": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.reviews))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "reviews",
+      "index": 12,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "reviews",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "room_type": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.room_type))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "room_type",
+      "index": 38,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "room_type",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "security_deposit": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.security_deposit))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "security_deposit",
+      "index": 18,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "security_deposit",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "space": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.space))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "space",
+      "index": 9,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "space",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "summary": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.summary))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "summary",
+      "index": 16,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "summary",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "transit": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.transit))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "transit",
+      "index": 30,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "transit",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "weekly_price": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.weekly_price))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "weekly_price",
+      "index": 21,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "weekly_price",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{FindQuery.data}}",
+  "textSize": "0.875rem",
+  "topRow": 7,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "m04j9ji345",
+  "widgetName": "data_table"
+}

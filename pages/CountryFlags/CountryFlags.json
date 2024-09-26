@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "64953a388c164921a65b7f09_64953b218c164921a65b7f2e",
+  "unpublishedPage": {
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 890.0,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0.0,
+          "minHeight": 890.0,
+          "parentColumnSpace": 1.0,
+          "parentRowSpace": 1.0,
+          "rightColumn": 1174.0,
+          "snapColumns": 64.0,
+          "snapRows": 125.0,
+          "topRow": 0.0,
+          "type": "CANVAS_WIDGET",
+          "version": 80.0,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "CountryFlags",
+    "slug": "countryflags"
+  }
+}

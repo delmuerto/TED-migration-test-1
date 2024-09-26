@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "649e71a9ef97940c07177e4a_649e7808ef97940c07177e79",
+  "id": "Widgets_astronauts",
   "unpublishedCollection": {
     "name": "astronauts",
     "pageId": "Widgets",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Widgets_astronauts",
-  "deleted": false,
-  "gitSyncId": "649e71a9ef97940c07177e4a_649e7808ef97940c07177e79"
+    "variables": []
+  }
 }

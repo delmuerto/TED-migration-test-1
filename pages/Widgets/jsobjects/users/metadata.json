@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "649e71a9ef97940c07177e4a_649e7784ef97940c07177e69",
+  "id": "Widgets_users",
   "unpublishedCollection": {
     "name": "users",
     "pageId": "Widgets",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Widgets_users",
-  "deleted": false,
-  "gitSyncId": "649e71a9ef97940c07177e4a_649e7784ef97940c07177e69"
+    "variables": []
+  }
 }

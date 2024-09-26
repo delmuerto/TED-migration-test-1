@@ -1,0 +1,60 @@
+{
+  "activeColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "bottomRow": 34,
+  "defaultRate": "2",
+  "displayName": "Rating",
+  "dynamicBindingPathList": [
+    {
+      "key": "activeColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRateChanged"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b73bbcc36e354d8f1ad16732801817db.svg",
+  "inactiveColor": "#E0DEDE",
+  "isAllowHalf": false,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isReadOnly": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rajck7wm55",
+  "leftColumn": 31,
+  "maxCount": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 169,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 165,
+  "onRateChanged": "{{showAlert('Rating Value Changed!', 'success');}}",
+  "originalBottomRow": 179,
+  "originalTopRow": 175,
+  "parentColumnSpace": 12.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 51,
+  "searchTags": [
+    "stars"
+  ],
+  "size": "LARGE",
+  "tooltips": [
+    "Terrible",
+    "Bad",
+    "Neutral",
+    "Good",
+    "Great"
+  ],
+  "topRow": 30,
+  "type": "RATE_WIDGET",
+  "widgetId": "46t3rd6x5c",
+  "widgetName": "Rating1"
+}

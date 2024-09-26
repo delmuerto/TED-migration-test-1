@@ -1,4 +1,17 @@
 {
+  "appIsExample": false,
+  "applicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#D9E7FF",
+  "evaluationVersion": 2,
+  "icon": "laptop",
   "pages": [
     {
       "id": "ListingAndReviews",
@@ -17,20 +30,11 @@
       "isDefault": false
     }
   ],
-  "viewMode": false,
-  "appIsExample": false,
-  "unreadCommentThreads": 0,
-  "color": "#D9E7FF",
-  "icon": "laptop",
-  "unpublishedCustomJSLibs": [
-    {
-      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+  "unpublishedApplicationDetail": {
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
     }
-  ],
-  "publishedCustomJSLibs": [],
-  "evaluationVersion": 2,
-  "applicationVersion": 2,
-  "collapseInvisibleWidgets": true,
-  "isManualUpdate": false,
-  "deleted": false
+  }
 }
